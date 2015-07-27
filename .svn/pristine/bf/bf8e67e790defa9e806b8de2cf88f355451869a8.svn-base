@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\exploded-aar\AD-show.libraries\drag-sort-listview\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c6483dd4fad817fb8059b60f56e75ffc956d9556">
+        <dex dex="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\pre-dexed\debug\classes-0df2b619aaa39419578e07954ecb3b3e108efd4c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\Desktop\작업중\KETI\AD-show\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Jaewook\Desktop\작업중\KETI\AD-show\app\build\intermediates\pre-dexed\debug\classes-f5108dc7254396f0a0c522064d652f2762aaaf04.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\Desktop\작업중\KETI\AD-show\app\build\intermediates\exploded-aar\AD-show.libraries\drag-sort-listview\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01260114553883447c6b2da8bbdf6cb447d60363">
+        <dex dex="C:\Users\Jaewook\Desktop\작업중\KETI\AD-show\app\build\intermediates\pre-dexed\debug\classes-b9be2daed5ce5315d9399db1f4602d1d6bfc7047.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\pre-dexed\debug\classes-3e1b647b5e439bcf0078e8a543e04881ede15aa3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\pre-dexed\debug\classes-52ffc456823287a416d72c16d95691c0748d1e86.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\Desktop\작업중\KETI\AD-show\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Jaewook\Desktop\작업중\KETI\AD-show\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-21959f6b519f460714f9a187d76e802ddbf61b2a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-1e64af8668da9593accd9d579c3c12ddf02a90f9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\Desktop\작업중\KETI\AD-show\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Jaewook\Desktop\작업중\KETI\AD-show\app\build\intermediates\pre-dexed\debug\classes-3ab0000fe85db838f1219e778f451ad8cd4fc87e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\Downloads\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-71e024c120cc2a5547bc594705eae39aac2a9692.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaewook\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\3.2\89b33bb1e996eb2c4089f79d1b8651c71fe8e2d1\androidannotations-api-3.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="89b33bb1e996eb2c4089f79d1b8651c71fe8e2d1">
+        <dex dex="C:\Users\Jaewook\Desktop\my\소상공인\AD-show\app\build\intermediates\pre-dexed\debug\androidannotations-api-3.2-6e5dfb8da9124b7a9cd7822b74f663b440431aa5.jar" />
+    </item>
+
+</items>

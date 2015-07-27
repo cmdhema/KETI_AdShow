@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_row_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/list_row_et_delayTime"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="10dp"
+        android:background="#66ffffff"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="5"
+        android:textColor="@color/abc_primary_text_material_dark" />
+    <!--<ImageView-->
+    <!--android:id="@id/drag_handle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_weight="0"-->
+    <!--android:rotation="90"-->
+    <!--android:background="@drawable/abc_ic_go_search_api_mtrl_alpha" />-->
+
+    <ImageView
+        android:id="@+id/list_row_up"
+        android:layout_width="10dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:background="@drawable/abc_ic_go_search_api_mtrl_alpha"
+        android:rotation="270" />
+
+    <ImageView
+        android:id="@+id/list_row_down"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:background="@drawable/abc_ic_go_search_api_mtrl_alpha"
+        android:rotation="90" />
+
+    <TextView
+        android:id="@+id/list_row_tv_filename"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/list_row_tv_playtime"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/list_row_delete"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/abc_ic_clear_mtrl_alpha" />
+
+</LinearLayout><!-- From: file:/C:/Users/Jaewook/Desktop/my/소상공인/AD-show/app/src/main/res/layout/list_row.xml -->

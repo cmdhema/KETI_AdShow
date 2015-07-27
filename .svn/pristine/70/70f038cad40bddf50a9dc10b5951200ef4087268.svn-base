@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="adshow.org.keti.ad_show.test">
+
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="21" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="adshow.org.keti.ad_show"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for adshow.org.keti.ad_show"/>
+</manifest>

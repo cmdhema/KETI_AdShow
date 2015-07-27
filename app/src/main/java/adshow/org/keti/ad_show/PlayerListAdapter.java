@@ -106,7 +106,7 @@ public class PlayerListAdapter extends ArrayAdapter<PlayerResource> {
             playTimeTv.setVisibility(View.VISIBLE);
         } else {
 //            delayTimeEt.setVisibility(View.VISIBLE);
-//            playTimeTv.setVisibility(View.INVISIBLE);
+            playTimeTv.setVisibility(View.INVISIBLE);
 //            list.get(index).time = Integer.parseInt(delayTimeEt.getText().toString());
 //            delayTimeEt.setText(list.get(index).time+"");
 //            Log.i("TAG", list.get(index).time + ", " + delayTimeEt.getText().toString());

@@ -42,18 +42,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
     final int ACTIVITY_CHOOSE_IMAGE_FILE = 1;
     final int ACTIVITY_CHOOSE_MOVIE_FILE = 2;
-    String[] fileUrls = {
-//            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/000A.mp4",
-//            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/001A.mp4",
-//            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/001B.mp4 ",
-//            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/001C.mp4",
-//            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/002A.mp4",
-//            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/003B.mp4",
-//            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/004A.mp4"
-            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/000A.mp4",
-            "http://ketiabcs.iptime.org/~jpark/media_dmsp/Live/002C.mp4",
 
-    };
     String fileLocalPath;
     MediaPlayer mPlayer;
 
@@ -75,14 +64,6 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     static PlayerListAdapter adapter;
     boolean isPlaying;
 
-    MediaPlayer.OnVideoSizeChangedListener mSizeChange = new MediaPlayer.OnVideoSizeChangedListener() {
-
-        @Override
-        public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
-            // TODO Auto-generated method stub
-        }
-    };
-
     @AfterViews
     void init() {
         URQAController.InitializeAndStartSession(getApplicationContext(), "AD930151");
@@ -99,13 +80,6 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
         if ( !listString.equals("null") )
             resourceList = gson.fromJson(listString, ResourceList.class).list;
-
-//        for ( int i = 0; i < fileUrls.length; i++ ) {
-//            PlayerResource resource = new PlayerResource();
-//            resource.type = 1;
-//            resource.path = fileUrls[i];
-//            resourceList.add(resource);
-//        }
 
         View listHeaderVIew = getLayoutInflater().inflate(R.layout.list_header, null, false);
         fileListView.addHeaderView(listHeaderVIew);
@@ -283,12 +257,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     public void surfaceCreated(SurfaceHolder surfaceHolder) {
         if (mPlayer == null)
             mPlayer = new MediaPlayer();
-        else {
-//            mPlayer.reset();
-        }
 
         mPlayer.setDisplay(surfaceHolder);
-        mPlayer.setOnVideoSizeChangedListener(mSizeChange);
 
     }
 

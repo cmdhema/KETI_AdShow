@@ -21,8 +21,6 @@ public class PlayerListAdapter extends ArrayAdapter<PlayerResource> {
     private ArrayList<PlayerResource> list;
     private OnFileItemClickListener listener;
 
-//    EditText delayTimeEt;
-
     public PlayerListAdapter(Context context, int textViewResourceId, ArrayList<PlayerResource> objects) {
         super(context, textViewResourceId, objects);
         inflater = LayoutInflater.from(context);
@@ -48,9 +46,8 @@ public class PlayerListAdapter extends ArrayAdapter<PlayerResource> {
     @Override
     public View getView(final int index, View view, ViewGroup viewGroup) {
         View v = view;
-        TextView fileNameTv = null;
-        TextView playTimeTv = null;
-//        EditText delayTimeEt = null;
+        TextView fileNameTv;
+        TextView playTimeTv;
         ImageView deleteIv;
         ImageView upIv;
         ImageView downIv;
@@ -62,7 +59,6 @@ public class PlayerListAdapter extends ArrayAdapter<PlayerResource> {
         downIv = (ImageView) v.findViewById(R.id.list_row_down);
         deleteIv = (ImageView) v.findViewById(R.id.list_row_delete);
         fileNameTv = (TextView) v.findViewById(R.id.list_row_tv_filename);
-//        delayTimeEt = (EditText) v.findViewById(R.id.list_row_et_delayTime);
         playTimeTv = (TextView) v.findViewById(R.id.list_row_tv_playtime);
         deleteIv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,15 +97,10 @@ public class PlayerListAdapter extends ArrayAdapter<PlayerResource> {
         int min = playTime/60;
         int sec = playTime - min*60;
         if ( resource.type != 2) {
-//            delayTimeEt.setVisibility(View.INVISIBLE);
             playTimeTv.setText(min + ":" + sec);
             playTimeTv.setVisibility(View.VISIBLE);
         } else {
-//            delayTimeEt.setVisibility(View.VISIBLE);
             playTimeTv.setVisibility(View.INVISIBLE);
-//            list.get(index).time = Integer.parseInt(delayTimeEt.getText().toString());
-//            delayTimeEt.setText(list.get(index).time+"");
-//            Log.i("TAG", list.get(index).time + ", " + delayTimeEt.getText().toString());
         }
 
         return v;

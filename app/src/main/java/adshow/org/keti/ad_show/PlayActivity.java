@@ -51,7 +51,7 @@ public class PlayActivity extends Activity implements SurfaceHolder.Callback {
 
     boolean isCurrentImage;
 
-    Handler handler;
+    Handler snapHandler;
     int resourceIndex = 0;
     MediaPlayer.OnCompletionListener mComplete = new MediaPlayer.OnCompletionListener() {
 
@@ -76,7 +76,7 @@ public class PlayActivity extends Activity implements SurfaceHolder.Callback {
     @AfterViews
     void init() {
         setAnimation();
-        handler = new Handler();
+        snapHandler = new Handler();
         surfaceHolder = surfaceView.getHolder();
         surfaceHolder.addCallback(this);
     }
@@ -109,12 +109,10 @@ public class PlayActivity extends Activity implements SurfaceHolder.Callback {
             isCurrentImage = true;
 
             snapLayout.setVisibility(View.VISIBLE);
-
-
             surfaceView.setVisibility(View.INVISIBLE);
             snapIv.setVisibility(View.VISIBLE);
             snapIv.setImageURI(Uri.parse(resource.path));
-            handler.postDelayed(snapRunnable, 5000);
+            snapHandler.postDelayed(snapRunnable, 5000);
 
             if (resourceIndex == MainActivity.adapter.getCount())
                 resourceIndex = 0;
@@ -128,7 +126,7 @@ public class PlayActivity extends Activity implements SurfaceHolder.Callback {
             mPlayer.release();
             isPlaying = false;
         }
-        handler.removeCallbacks(snapRunnable);
+        snapHandler.removeCallbacks(snapRunnable);
     }
 
     @Override
@@ -146,18 +144,11 @@ public class PlayActivity extends Activity implements SurfaceHolder.Callback {
 
     @Override
     public void surfaceCreated(SurfaceHolder surfaceHolder) {
-//        this.surfaceHolder = surfaceHolder;
         Log.i("PlayActivity", "surfaceCreated");
         if (mPlayer == null) {
             surface = surfaceHolder.getSurface();
             playMovies();
-        } else {
-//            mPlayer.setDisplay(surfaceHolder);
-//            mPlayer.reset();
         }
-
-        Log.i("PlayActivity", "surfaceCreated");
-//        playMovies();
     }
 
     @Override
